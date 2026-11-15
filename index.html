@@ -1,137 +1,217 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Camila Guest House Rundu | Comfortable & Secure Accommodation</title>
-    <meta name="description" content="Affordable, air-conditioned rooms, secure gated parking, and event hosting at Camila Guest House on Safari Street, Rundu.">
-    <script src="https://tailwindcss.com"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Camila Guest House Rundu | Comfortable & Secure Accommodation</title>
+<meta name="description" content="Affordable, air-conditioned rooms, secure gated parking, and event hosting at Camila Guest House on Safari Street, Rundu.">
+<script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-stone-50 text-stone-800 font-sans antialiased pb-16 md:pb-0">
 
-    <!-- Sticky Navigation -->
-    <header class="bg-white/95 backdrop-blur shadow-sm sticky top-0 z-40">
-        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-            <a href="#" class="text-xl font-bold text-amber-800 tracking-tight">
-                Camila Guest House <span class="text-stone-500 font-normal text-sm block sm:inline">Rundu</span>
-            </a>
-            <nav class="hidden md:flex space-x-6 text-sm font-medium text-stone-600">
-                <a href="#rooms" class="hover:text-amber-700 transition">Rooms</a>
-                <a href="#amenities" class="hover:text-amber-700 transition">Amenities</a>
-                <a href="#events" class="hover:text-amber-700 transition">Lapa & Events</a>
-                <a href="#location" class="hover:text-amber-700 transition">Location</a>
-            </nav>
-            <a href="https://wa.me." 
-               target="_blank" 
-               class="bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-semibold px-4 py-2 rounded-lg shadow transition">
-                Book on WhatsApp
-            </a>
+<!-- Navigation -->
+<header class="bg-white/95 backdrop-blur shadow-sm sticky top-0 z-40">
+  <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+    <a href="#" class="text-xl font-bold text-amber-800 tracking-tight">Camila Guest House <span class="text-stone-500 font-normal text-sm block sm:inline">Rundu</span></a>
+    <nav class="hidden md:flex space-x-6 text-sm font-medium text-stone-600">
+      <a href="#rooms" class="hover:text-amber-700">Rooms</a>
+      <a href="#amenities" class="hover:text-amber-700">Amenities</a>
+      <a href="#gallery" class="hover:text-amber-700">Gallery</a>
+      <a href="#events" class="hover:text-amber-700">Lapa &amp; Events</a>
+      <a href="#location" class="hover:text-amber-700">Location</a>
+    </nav>
+    <a href="#" data-wa target="_blank" rel="noopener" class="bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-semibold px-4 py-2 rounded-lg shadow transition">Book on WhatsApp</a>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="relative bg-stone-900 text-white">
+  <img src="images/lapa-exterior.jpg" alt="Camila Guest House Thatched Lapa at Sunset" class="w-full h-[460px] object-cover opacity-50">
+  <div class="absolute inset-0 flex flex-col justify-center items-center text-center px-4 max-w-3xl mx-auto">
+    <span class="bg-amber-600/90 text-xs tracking-wide font-semibold px-3 py-1 rounded-full mb-4">Safari Street • Rundu, Namibia</span>
+    <h1 class="text-3xl sm:text-5xl font-extrabold leading-tight mb-4">Your Peaceful, Secure Home Away From Home in Rundu</h1>
+    <p class="text-stone-200 text-base sm:text-lg mb-8">Clean air-conditioned rooms, self-catering conveniences, secure gated parking, and a traditional thatched lapa for dining and small events.</p>
+    <div class="flex flex-col sm:flex-row gap-3 w-full sm:w-auto">
+      <a href="#" data-wa data-msg="Hi, I'd like to check availability." target="_blank" rel="noopener" class="bg-emerald-600 hover:bg-emerald-700 font-semibold px-6 py-3 rounded-lg shadow-lg transition text-center">Check Availability via WhatsApp</a>
+      <a href="#rooms" class="bg-white/15 hover:bg-white/25 backdrop-blur font-semibold px-6 py-3 rounded-lg border border-white/30 transition text-center">Explore Our Rooms</a>
+    </div>
+  </div>
+</section>
+
+<!-- Rooms -->
+<section id="rooms" class="max-w-6xl mx-auto px-4 py-16">
+  <div class="text-center max-w-2xl mx-auto mb-12">
+    <h2 class="text-3xl font-bold text-stone-900 mb-3">Comfortable Rooms for Every Traveler</h2>
+    <p class="text-stone-600">Tap any photo to inspect our rooms full-screen. Clean, private, and designed for comfort.</p>
+  </div>
+  <div class="grid md:grid-cols-3 gap-8">
+
+    <article class="bg-white rounded-xl shadow-sm border border-stone-200 overflow-hidden flex flex-col">
+      <div class="relative group cursor-pointer overflow-hidden" onclick="openLightbox('images/room-selfcatering.jpg','Self-Catering Suite — Bar fridge, microwave, kettle & air-conditioning')">
+        <img src="images/room-selfcatering.jpg" alt="Self-Catering Double Room with Fridge and Microwave" class="h-56 w-full object-cover group-hover:scale-105 transition duration-300">
+        <span class="absolute bottom-2 right-2 bg-black/60 text-white text-xs px-2 py-1 rounded">🔍 Tap to zoom</span>
+      </div>
+      <div class="p-6 flex-1 flex flex-col justify-between">
+        <div>
+          <div class="flex justify-between items-start mb-2">
+            <h3 class="text-xl font-bold text-stone-900">Self-Catering Suite</h3>
+            <span class="bg-amber-100 text-amber-800 text-xs font-bold px-2.5 py-1 rounded">Popular</span>
+          </div>
+          <p class="text-stone-600 text-sm mb-4">Ideal for extended stays. Equipped with a bar fridge, microwave, electric kettle, dining counter, and split-unit air conditioning.</p>
+          <ul class="text-xs text-stone-500 space-y-1 mb-6">
+            <li>✓ Air Conditioning &amp; Built-in Wardrobe</li>
+            <li>✓ Mini-Fridge, Microwave &amp; Tea/Coffee Station</li>
+            <li>✓ En-suite Bathroom &amp; Fresh Towels</li>
+          </ul>
         </div>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="relative bg-stone-900 text-white">
-        <img src="images/lapa-exterior.jpg" alt="Camila Guest House Thatched Lapa at Sunset" class="w-full h-[460px] object-cover opacity-50">
-        <div class="absolute inset-0 flex flex-col justify-center items-center text-center px-4 max-w-3xl mx-auto">
-            <span class="bg-amber-600/90 text-white text-xs uppercase tracking-widest font-semibold px-3 py-1 rounded-full mb-4">
-                Safari Street • Rundu, Namibia
-            </span>
-            <h1 class="text-3xl sm:text-5xl font-extrabold leading-tight mb-4">
-                Your Peaceful, Secure Home Away From Home in Rundu
-            </h1>
-            <p class="text-stone-200 text-base sm:text-lg mb-8">
-                Clean air-conditioned rooms, self-catering conveniences, secure gated parking, and a traditional thatched lapa for dining and small events.
-            </p>
-            <div class="flex flex-col sm:flex-row gap-3 w-full sm:w-auto">
-                <a href="https://wa.me." 
-                   target="_blank"
-                   class="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold px-6 py-3 rounded-lg shadow-lg transition text-center">
-                    Check Availability via WhatsApp
-                </a>
-                <a href="#rooms" class="bg-white/15 hover:bg-white/25 backdrop-blur text-white font-semibold px-6 py-3 rounded-lg border border-white/30 transition text-center">
-                    Explore Our Rooms
-                </a>
-            </div>
+        <div>
+          <p class="text-lg font-bold text-stone-900 mb-3">N$ [Insert Rate] <span class="text-xs font-normal text-stone-500">/ night</span></p>
+          <a href="#" data-wa data-msg="Hi, I'd like to reserve the Self-Catering Suite." target="_blank" rel="noopener" class="block text-center bg-amber-700 hover:bg-amber-800 text-white font-medium py-2.5 rounded-lg transition">Reserve This Room</a>
         </div>
-    </section>
+      </div>
+    </article>
 
-    <!-- Rooms Section -->
-    <section id="rooms" class="max-w-6xl mx-auto px-4 py-16">
-        <div class="text-center max-w-2xl mx-auto mb-12">
-            <h2 class="text-3xl font-bold text-stone-900 mb-3">Comfortable Rooms for Every Traveler</h2>
-            <p class="text-stone-600">Tap any photo to inspect our rooms full-screen. Clean, private, and designed for comfort.</p>
+    <article class="bg-white rounded-xl shadow-sm border border-stone-200 overflow-hidden flex flex-col">
+      <div class="relative group cursor-pointer overflow-hidden" onclick="openLightbox('images/room-deluxe.jpg','Spacious Deluxe Room — Plush double bed & full climate control')">
+        <img src="images/room-deluxe.jpg" alt="Spacious Deluxe Room" class="h-56 w-full object-cover group-hover:scale-105 transition duration-300">
+        <span class="absolute bottom-2 right-2 bg-black/60 text-white text-xs px-2 py-1 rounded">🔍 Tap to zoom</span>
+      </div>
+      <div class="p-6 flex-1 flex flex-col justify-between">
+        <div>
+          <h3 class="text-xl font-bold text-stone-900 mb-2">Spacious Deluxe Room</h3>
+          <p class="text-stone-600 text-sm mb-4">Extra floor space with a plush double bed, bedside storage, and full climate control for a restful night.</p>
+          <ul class="text-xs text-stone-500 space-y-1 mb-6">
+            <li>✓ Double Bed with Crisp White Linen</li>
+            <li>✓ Air Conditioning</li>
+            <li>✓ Daily Housekeeping</li>
+          </ul>
         </div>
+        <div>
+          <p class="text-lg font-bold text-stone-900 mb-3">N$ [Insert Rate] <span class="text-xs font-normal text-stone-500">/ night</span></p>
+          <a href="#" data-wa data-msg="Hi, I'd like to reserve the Spacious Deluxe Room." target="_blank" rel="noopener" class="block text-center bg-amber-700 hover:bg-amber-800 text-white font-medium py-2.5 rounded-lg transition">Reserve This Room</a>
+        </div>
+      </div>
+    </article>
 
-        <div class="grid md:grid-cols-3 gap-8">
-            <!-- Room Card 1 -->
-            <article class="bg-white rounded-xl shadow-sm border border-stone-200 overflow-hidden flex flex-col">
-                <div class="relative group cursor-pointer" onclick="openLightbox('images/room-selfcatering.jpg', 'Self-Catering Suite — Bar fridge, microwave, kettle & air-conditioning')">
-                    <img src="images/room-selfcatering.jpg" alt="Self-Catering Double Room with Fridge and Microwave" class="h-56 w-full object-cover group-hover:scale-105 transition duration-300">
-                    <span class="absolute bottom-2 right-2 bg-black/60 text-white text-xs px-2 py-1 rounded">🔍 Tap to zoom</span>
-                </div>
-                <div class="p-6 flex-1 flex flex-col justify-between">
-                    <div>
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="text-xl font-bold text-stone-900">Self-Catering Suite</h3>
-                            <span class="bg-amber-100 text-amber-800 text-xs font-bold px-2.5 py-1 rounded">Popular</span>
-                        </div>
-                        <p class="text-stone-600 text-sm mb-4">Ideal for extended stays. Equipped with a bar fridge, microwave, electric kettle, dining counter, and split-unit air conditioning.</p>
-                        <ul class="text-xs text-stone-500 space-y-1 mb-6">
-                            <li>✓ Air Conditioning & Built-in Wardrobe</li>
-                            <li>✓ Mini-Fridge, Microwave & Tea/Coffee Station</li>
-                            <li>✓ En-suite Bathroom & Fresh Towels</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <p class="text-lg font-bold text-stone-900 mb-3">N$ [Insert Rate] <span class="text-xs font-normal text-stone-500">/ night</span></p>
-                        <a href="https://wa.me." target="_blank" class="block text-center bg-amber-700 hover:bg-amber-800 text-white font-medium py-2.5 rounded-lg transition">
-                            Reserve This Room
-                        </a>
-                    </div>
-                </div>
-            </article>
+    <article class="bg-white rounded-xl shadow-sm border border-stone-200 overflow-hidden flex flex-col">
+      <div class="relative group cursor-pointer overflow-hidden" onclick="openLightbox('images/room-yellow.jpg','Standard Double Room — Wall-mounted TV & satellite channels')">
+        <img src="images/room-yellow.jpg" alt="Standard Double Room with TV" class="h-56 w-full object-cover group-hover:scale-105 transition duration-300">
+        <span class="absolute bottom-2 right-2 bg-black/60 text-white text-xs px-2 py-1 rounded">🔍 Tap to zoom</span>
+      </div>
+      <div class="p-6 flex-1 flex flex-col justify-between">
+        <div>
+          <h3 class="text-xl font-bold text-stone-900 mb-2">Standard Double Room</h3>
+          <p class="text-stone-600 text-sm mb-4">Warm, cozy, and budget-friendly, with a wall-mounted TV and a private entrance.</p>
+          <ul class="text-xs text-stone-500 space-y-1 mb-6">
+            <li>✓ Wall-Mounted TV</li>
+            <li>✓ Air Conditioning &amp; Security Gate Access</li>
+            <li>✓ Free Secure On-Site Parking</li>
+          </ul>
+        </div>
+        <div>
+          <p class="text-lg font-bold text-stone-900 mb-3">N$ [Insert Rate] <span class="text-xs font-normal text-stone-500">/ night</span></p>
+          <a href="#" data-wa data-msg="Hi, I'd like to reserve the Standard Double Room." target="_blank" rel="noopener" class="block text-center bg-amber-700 hover:bg-amber-800 text-white font-medium py-2.5 rounded-lg transition">Reserve This Room</a>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
 
-            <!-- Room Card 2 -->
-            <article class="bg-white rounded-xl shadow-sm border border-stone-200 overflow-hidden flex flex-col">
-                <div class="relative group cursor-pointer" onclick="openLightbox('images/room-deluxe.jpg', 'Spacious Deluxe Room — Plush double bed & full climate control')">
-                    <img src="images/room-deluxe.jpg" alt="Spacious Deluxe Room" class="h-56 w-full object-cover group-hover:scale-105 transition duration-300">
-                    <span class="absolute bottom-2 right-2 bg-black/60 text-white text-xs px-2 py-1 rounded">🔍 Tap to zoom</span>
-                </div>
-                <div class="p-6 flex-1 flex flex-col justify-between">
-                    <div>
-                        <h3 class="text-xl font-bold text-stone-900 mb-2">Spacious Deluxe Room</h3>
-                        <p class="text-stone-600 text-sm mb-4">Extra floor space with a plush double bed, bedside storage, luggage rack, and full climate control for a restful night.</p>
-                        <ul class="text-xs text-stone-500 space-y-1 mb-6">
-                            <li>✓ King/Queen Bed with Crisp White Linen</li>
-                            <li>✓ Air Conditioning & Flat-Screen TV</li>
-                            <li>✓ Free Wi-Fi & Daily Housekeeping</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <p class="text-lg font-bold text-stone-900 mb-3">N$ [Insert Rate] <span class="text-xs font-normal text-stone-500">/ night</span></p>
-                        <a href="https://wa.me." target="_blank" class="block text-center bg-amber-700 hover:bg-amber-800 text-white font-medium py-2.5 rounded-lg transition">
-                            Reserve This Room
-                        </a>
-                    </div>
-                </div>
-            </article>
+<!-- Amenities -->
+<section id="amenities" class="bg-white py-16">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-3xl font-bold text-stone-900 mb-3 text-center">Amenities &amp; Grounds</h2>
+    <p class="text-stone-600 text-center max-w-2xl mx-auto mb-10">Secure, well-kept grounds with shaded walkways, potted gardens, and a gated entrance.</p>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-10">
+      <img src="images/walkway-day.jpg" alt="Tiled walkway outside the rooms" class="h-56 w-full object-cover rounded-lg cursor-pointer" onclick="openLightbox(this.src,this.alt)">
+      <img src="images/walkway-sunset.jpg" alt="Covered walkway and garden at sunset" class="h-56 w-full object-cover rounded-lg cursor-pointer" onclick="openLightbox(this.src,this.alt)">
+      <img src="images/entrance-gate.jpg" alt="Secure entrance gate and garden" class="h-56 w-full object-cover rounded-lg cursor-pointer" onclick="openLightbox(this.src,this.alt)">
+      <img src="images/room-wardrobe.jpg" alt="Room with built-in wardrobe and wall-mounted TV" class="h-56 w-full object-cover rounded-lg cursor-pointer" onclick="openLightbox(this.src,this.alt)">
+    </div>
+    <ul class="grid sm:grid-cols-2 lg:grid-cols-4 gap-3 text-sm text-stone-700">
+      <li class="bg-stone-50 border border-stone-200 rounded-lg p-4">Secure gated parking</li>
+      <li class="bg-stone-50 border border-stone-200 rounded-lg p-4">Air-conditioned rooms</li>
+      <li class="bg-stone-50 border border-stone-200 rounded-lg p-4">Self-catering facilities</li>
+      <li class="bg-stone-50 border border-stone-200 rounded-lg p-4">Clean linen &amp; fresh towels</li>
+    </ul>
+  </div>
+</section>
 
-            <!-- Room Card 3 -->
-            <article class="bg-white rounded-xl shadow-sm border border-stone-200 overflow-hidden flex flex-col">
-                <div class="relative group cursor-pointer" onclick="openLightbox('images/room-yellow.jpg', 'Standard Double Room — Wall-mounted TV & satellite channels')">
-                    <img src="images/room-yellow.jpg" alt="Standard Double Room with TV" class="h-56 w-full object-cover group-hover:scale-105 transition duration-300">
-                    <span class="absolute bottom-2 right-2 bg-black/60 text-white text-xs px-2 py-1 rounded">🔍 Tap to zoom</span>
-                </div>
-                <div class="p-6 flex-1 flex flex-col justify-between">
-                    <div>
-                        <h3 class="text-xl font-bold text-stone-900 mb-2">Standard Double Room</h3>
-                        <p class="text-stone-600 text-sm mb-4">Warm, cozy, and budget-friendly accommodation featuring a wall-mounted TV with satellite channels and secure private entrance.</p>
-                        <ul class="text-xs text-stone-500 space-y-1 mb-6">
-                            <li>✓ Wall-Mounted TV & Satellite Channels</li>
-                            <li>✓ Air Conditioning & Security Gate Access</li>
-                            <li>✓ Free Secure On-Site Parking</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <p class="text-lg font-bold text-stone-900 mb-3">N$ [Insert Rate] <span class="text-xs font-normal text-stone-500">/ night</span></p>
-                        <a href="https://wa.me." target="_blank" class="block text-center bg-amber-700 hover:bg-amber-800 text-white font-medium py-2.5 rounded-lg transition">
+<!-- Gallery -->
+<section id="gallery" class="max-w-6xl mx-auto px-4 py-16">
+  <h2 class="text-3xl font-bold text-stone-900 mb-3 text-center">Photo Gallery</h2>
+  <p class="text-stone-600 text-center max-w-2xl mx-auto mb-10">A closer look at our rooms, courtyard, and gardens. Tap any photo to enlarge.</p>
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+    <img src="images/courtyard-rooms.webp" alt="Courtyard and rooms with covered parking area" loading="lazy" class="h-48 md:h-56 w-full object-cover rounded-lg cursor-pointer hover:opacity-90 transition" onclick="openLightbox(this.src,this.alt)">
+    <img src="images/room-twin-kitchenette.webp" alt="Twin room with kettle, microwave and fridge" loading="lazy" class="h-48 md:h-56 w-full object-cover rounded-lg cursor-pointer hover:opacity-90 transition" onclick="openLightbox(this.src,this.alt)">
+    <img src="images/room-twin.webp" alt="Twin beds with bedside lamps" loading="lazy" class="h-48 md:h-56 w-full object-cover rounded-lg cursor-pointer hover:opacity-90 transition" onclick="openLightbox(this.src,this.alt)">
+    <img src="images/room-redcurtain.webp" alt="Room with red curtain, TV, fridge and microwave" loading="lazy" class="h-48 md:h-56 w-full object-cover rounded-lg cursor-pointer hover:opacity-90 transition" onclick="openLightbox(this.src,this.alt)">
+    <img src="images/room-redrunner.webp" alt="Room with wall-mounted TV and red bed runner" loading="lazy" class="h-48 md:h-56 w-full object-cover rounded-lg cursor-pointer hover:opacity-90 transition" onclick="openLightbox(this.src,this.alt)">
+    <img src="images/walkway-parking.webp" alt="Covered walkway with secure parking area" loading="lazy" class="h-48 md:h-56 w-full object-cover rounded-lg cursor-pointer hover:opacity-90 transition" onclick="openLightbox(this.src,this.alt)">
+    <img src="images/view-to-lapa.webp" alt="View across the courtyard to the thatched lapa" loading="lazy" class="h-48 md:h-56 w-full object-cover rounded-lg cursor-pointer hover:opacity-90 transition" onclick="openLightbox(this.src,this.alt)">
+    <img src="images/garden-lapa-dusk.webp" alt="Garden and thatched lapa at dusk" loading="lazy" class="h-48 md:h-56 w-full object-cover rounded-lg cursor-pointer hover:opacity-90 transition" onclick="openLightbox(this.src,this.alt)">
+  </div>
+</section>
+
+<!-- Lapa & Events -->
+<section id="events" class="max-w-6xl mx-auto px-4 py-16">
+  <div class="grid md:grid-cols-2 gap-8 items-center">
+    <div class="grid grid-cols-2 gap-4">
+      <img src="images/lapa-exterior.jpg" alt="Thatched lapa at sunset" class="h-72 w-full object-cover rounded-lg cursor-pointer" onclick="openLightbox(this.src,this.alt)">
+      <img src="images/lapa-event.jpg" alt="Lapa set up for a dinner event" class="h-72 w-full object-cover rounded-lg cursor-pointer" onclick="openLightbox(this.src,this.alt)">
+    </div>
+    <div>
+      <h2 class="text-3xl font-bold text-stone-900 mb-3">Our Thatched Lapa</h2>
+      <p class="text-stone-600 mb-4">A traditional thatched lapa for relaxed dining, birthdays, and small gatherings. Tables and chairs can be set up for your event.</p>
+      <p class="text-stone-600 mb-6">Message us with your date and guest numbers and we will confirm availability and pricing.</p>
+      <a href="#" data-wa data-msg="Hi, I'd like to enquire about hosting an event at the lapa." target="_blank" rel="noopener" class="inline-block bg-emerald-600 hover:bg-emerald-700 text-white font-semibold px-6 py-3 rounded-lg transition">Enquire About Events</a>
+    </div>
+  </div>
+</section>
+
+<!-- Location -->
+<section id="location" class="bg-stone-900 text-white py-16">
+  <div class="max-w-6xl mx-auto px-4 text-center">
+    <h2 class="text-3xl font-bold mb-3">Find Us in Rundu</h2>
+    <p class="text-stone-300 mb-6">Safari Street, Rundu, Namibia</p>
+    <a href="https://www.google.com/maps/search/?api=1&query=Camila+Guest+House+Safari+Street+Rundu+Namibia" target="_blank" rel="noopener" class="inline-block bg-white text-stone-900 font-semibold px-6 py-3 rounded-lg hover:bg-stone-200 transition">Open in Google Maps</a>
+  </div>
+</section>
+
+<footer class="bg-stone-950 text-stone-400 text-sm text-center py-6 bg-black">
+  © <span id="yr"></span> Camila Guest House Rundu. All rights reserved.
+</footer>
+
+<!-- Mobile sticky booking bar -->
+<div class="md:hidden fixed bottom-0 inset-x-0 z-40 bg-white border-t border-stone-200 p-2">
+  <a href="#" data-wa target="_blank" rel="noopener" class="block text-center bg-emerald-600 text-white font-semibold py-3 rounded-lg">Book on WhatsApp</a>
+</div>
+
+<!-- Lightbox -->
+<div id="lightbox" class="hidden fixed inset-0 z-50 bg-black/90 flex flex-col items-center justify-center p-4" onclick="closeLightbox()">
+  <button class="absolute top-4 right-4 text-white text-3xl leading-none" aria-label="Close" onclick="closeLightbox()">&times;</button>
+  <img id="lb-img" src="" alt="" class="max-h-[80vh] max-w-full object-contain rounded" onclick="event.stopPropagation()">
+  <p id="lb-cap" class="text-white text-sm mt-4 text-center max-w-xl"></p>
+</div>
+
+<script>
+  // 👉 Put your WhatsApp number here: country code, digits only (e.g. 264811234567)
+  const WA_NUMBER = "264XXXXXXXXX";
+
+  document.querySelectorAll("[data-wa]").forEach(a => {
+    const msg = a.dataset.msg || "Hi, I'd like to enquire about Camila Guest House.";
+    a.href = "https://wa.me/" + WA_NUMBER + "?text=" + encodeURIComponent(msg);
+  });
+
+  const lb = document.getElementById("lightbox");
+  function openLightbox(src, caption) {
+    document.getElementById("lb-img").src = src;
+    document.getElementById("lb-cap").textContent = caption || "";
+    lb.classList.remove("hidden");
+  }
+  function closeLightbox() { lb.classList.add("hidden"); }
+  document.addEventListener("keydown", e => { if (e.key === "Escape") closeLightbox(); });
+  document.getElementById("yr").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
